@@ -1,1 +1,1 @@
-# logoipsum
+# logoipsum [No Adaptive]
