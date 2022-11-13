@@ -239,11 +239,10 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 104px;
 }
 
 .about__left {
-  max-width: 468px;
+  width: 468px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,6 +280,15 @@ nav {
   letter-spacing: -0.625263px;
   color: #696871;
   margin-bottom: 50px;
+}
+
+.about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about__btn-started {
@@ -578,12 +586,54 @@ ul {
     max-width: 970px;
   }
 
+  .navbar__btn-started {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+
   .menu__item {
     margin-bottom: 50px;
   }
 
   .menu__item-link {
     font-size: 42px;
+  }
+
+  .burger {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .about__left {
+    width: 368px;
+  }
+
+  .about__right {
+    min-width: 394px;
+  }
+
+  .about__title {
+    font-size: 62px;
+  }
+
+  .about__desc {
+    font-size: 16px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .btn-started {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
+  .btn-try {
+    font-size: 14px;
+    padding: 10px 50px;
   }
 }
 
@@ -708,14 +758,33 @@ ul {
     max-width: 740px;
   }
 
-  .logo {
-    width: 150px;
-    margin-left: 0;
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  .btn-started {
-    font-size: 14px;
-    padding: 10px 30px;
+  .about__left {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .about__title {
+    font-size: 52px;
+    text-align: center;
+  }
+
+  .about__desc {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 150px;
   }
 }
 
@@ -724,23 +793,11 @@ ul {
     max-width: none;
   }
 
-  .navbar__btn-started {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-
-  .burger {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .about__right {
+    min-width: 294px;
   }
 
   .logo {
     display: none;
-  }
-
-  .btn-started {
-    padding: 10px 20px;
   }
 }
